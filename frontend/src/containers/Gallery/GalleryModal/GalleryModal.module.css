@@ -1,0 +1,14 @@
+.button {
+    text-decoration: none;
+    overflow-y: hidden;
+    color: white;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    width: 190px;
+    line-height: 50px;
+    background-color: black;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgb(255, 255, 255, 0.4);
+}

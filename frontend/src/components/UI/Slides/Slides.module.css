@@ -1,0 +1,400 @@
+@media (prefers-color-scheme: dark) {
+    .text {
+        color: #000000;
+    }
+}
+
+/* This set styles for Img case */
+
+.containerImg {
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.controlsImg {
+    margin: auto;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.controlImg {
+    width: 4vw;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.photo {
+    height: 57vw;
+    max-width: 90vw;
+    box-shadow: 0px 2vw 2vw #b6b5b5;
+    transform: translateX(100vw);
+    opacity: 0;
+    position: absolute;
+}
+
+/* This set styles for TEXT case */
+
+.containerTxt {
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.controlsTxt {
+    margin: auto;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.controlTxt {
+    width: 4vw;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.text {
+    opacity: 0;
+    position: absolute;
+    background-color: transparent;
+    width: 60vw;
+    right: 18vw;
+    top: 10vw;
+    font-size: 3.3vw;
+    font-style: italic;
+    font-weight: 100;
+    color: #131313;
+}
+
+.quote {
+    font-size: 3.3vw;
+}
+
+/* This set styles for SVG case */
+
+.containerSvg {
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.controlsSvg {
+    margin: auto;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.controlSvg {
+    width: 4vw;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.svg {
+    width: 65vw;
+    opacity: 0;
+    position: absolute;
+}
+
+/* The classes that make the movement */
+
+.selected5000 {
+    animation: photoSlideForward 5.3s ease-out forwards;
+    z-index: 2;
+}
+.back5000 {
+    animation: photoSlideBack 5s ease-out forwards;
+}
+
+.selected15000 {
+    animation: textSlideForward 15s ease-out forwards;
+    z-index: 2;
+}
+.back15000 {
+    animation: textSlideBack 15s ease-out forwards;
+}
+
+@keyframes photoSlideForward {
+    0% {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    85% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes photoSlideBack {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    85% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes textSlideForward {
+    0% {
+        opacity: 0;
+        transform: translateX(8vw);
+    }
+
+    5% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    95% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-8vw);
+    }
+}
+
+@keyframes textSlideBack {
+    0% {
+        opacity: 0;
+        transform: translateX(-8vw);
+    }
+
+    5% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    95% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-8vw);
+    }
+}
+
+/* Classes that display all elements from the payload */
+
+.containerAll {
+    display: none;
+}
+
+/* Between 768 and 1170 px  */
+
+@media (min-width: 768px) {
+    /* Case IMG */
+    .containerImg {
+        margin: 0 auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .photo {
+        max-height: 55vw;
+        max-width: 80vw;
+        box-shadow: 0px 10px 10px #b6b5b5;
+    }
+    @keyframes photoSlideForward {
+        0% {
+            opacity: 0;
+            transform: translateX(100vw);
+        }
+
+        25% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        75% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        95% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-100vw);
+        }
+    }
+    .controlsImg {
+        width: 100%;
+        top: 45%;
+    }
+    .controlImg {
+        width: 30px;
+    }
+
+    /* Case TEXT */
+
+    .containerTxt {
+        height: 40vw;
+        overflow-y: hidden;
+    }
+
+    .controlsTxt {
+        margin: auto;
+        position: absolute;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 3;
+        top: 15.7vw;
+        right: 1.6vw;
+    }
+
+    .controlTxt {
+        width: 2vw;
+        cursor: pointer;
+        text-align: center;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+
+    .text {
+        position: absolute;
+        width: 73%;
+        right: 7vw;
+        top: 12vw;
+        font-size: 1.4vw;
+    }
+    .quote {
+        font-size: 1.4vw;
+    }
+
+    /* Case SVG */
+
+    .containerSvg {
+        display: none;
+    }
+
+    .containerAll {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .svgAll {
+        width: 20%;
+
+        animation: svgSlideForward 5s ease-in-out infinite;
+    }
+
+    @keyframes svgSlideForward {
+        0% {
+            opacity: 0;
+            transform: translateX(50%);
+        }
+
+        8% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        92% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+/* 1170 px onwards  */
+
+@media (min-width: 1170px) {
+    /* Case IMG */
+
+    .photo {
+        max-height: 550px;
+        max-width: 801px;
+    }
+    .controlsImg {
+        width: 1050px;
+    }
+    .controlImg {
+        width: 30px;
+    }
+    /* Case TEXT */
+
+    .containerTxt {
+        height: 468px;
+    }
+
+    .controlsTxt {
+        width: 426px;
+        top: 183px;
+        right: 18.7px;
+    }
+
+    .controlTxt {
+        width: 23.4px;
+    }
+
+    .text {
+        width: 327px;
+        right: 82px;
+        top: 140px;
+        font-size: 16px;
+    }
+    .quote {
+        font-size: 16px;
+    }
+}

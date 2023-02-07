@@ -1,0 +1,30 @@
+.container {
+    margin: 25vw 5vw;
+}
+
+.title {
+    color: black;
+    margin: 0 0 8% 0;
+    font-size: 5.5vw;
+    font-weight: 400;
+}
+.flag {
+    margin: 0 0 2vw 0;
+    font-size: 3.8vw;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0;
+        width: 48%;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .flag {
+        margin: 0 0 2% 0;
+        font-size: 14px;
+    }
+}

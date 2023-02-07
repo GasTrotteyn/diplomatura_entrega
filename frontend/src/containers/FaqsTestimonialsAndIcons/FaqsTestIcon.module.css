@@ -1,0 +1,18 @@
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10vw;
+        max-width: 80vw;
+    }
+    .testIcons {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        margin-top: 80px;
+        width: 935px;
+    }
+}

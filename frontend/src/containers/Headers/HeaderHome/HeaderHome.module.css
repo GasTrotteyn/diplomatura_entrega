@@ -1,0 +1,108 @@
+.container {
+    width: 100%;
+    height: 78vw;
+}
+.sky {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+    background-position: 60% top;
+    background-size: 173%;
+    background-repeat: no-repeat;
+}
+.mountain {
+    width: 100vw;
+    height: 135vw;
+    position: absolute;
+    top: 39.5vw;
+    background-image: url("../../../Assests/optimized/bg-main.png");
+    background-position: center top;
+    background-size: 125%;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Gilroy-Bold ☞";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Gilroy-Bold ☞"),
+        url("../../../Assests/fonts/Gilroy-Bold.woff") format("woff");
+}
+
+h1 {
+    text-align: center;
+    z-index: -1;
+    color: #ffffff;
+    font-size: 5.5vw;
+    font-family: "Gilroy-Bold ☞", sans-serif;
+    font-weight: normal;
+    position: absolute;
+    top: 25.5vw;
+    line-height: 1.1;
+    letter-spacing: 0.1em;
+    width: 100%;
+}
+.description {
+    position: absolute;
+    top: 63vw;
+    font-size: 4.3vw;
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin: 0vw 5vw 0vw;
+}
+
+@media (min-width: 768px) {
+    .container {
+        height: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sky {
+        background-position: center top;
+        background-size: 1900px;
+    }
+    .mountain {
+        width: 100vw;
+        height: 135vw;
+        top: 39.5vw;
+        background-position: center top;
+        background-size: 100vw;
+    }
+    .description {
+        top: 58vw;
+        font-size: 30px;
+        max-width: 723px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        height: 50vw;
+    }
+    .sky {
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+    }
+    .mountain {
+        width: 100%;
+        height: 25%;
+        top: 18vw;
+        background-size: 100%;
+    }
+    h1 {
+        top: 10.6vw;
+        font-size: 3vw;
+    }
+    .description {
+        top: 39vw;
+        font-size: 33px;
+        margin: 0 15vw;
+    }
+}

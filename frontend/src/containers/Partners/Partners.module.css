@@ -1,0 +1,20 @@
+.container {
+    margin: 25vw 5vw 0 5vw;
+}
+.title {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0;
+        width: 90%;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        width: 1170px;
+        margin: 0;
+    }
+}

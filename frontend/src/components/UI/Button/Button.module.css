@@ -1,0 +1,78 @@
+.Button {
+    border: 1px solid #b8b8b8;
+    width: 30vw;
+    height: 10vw;
+    background-color: transparent;
+}
+
+.Button a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    margin-top: 1.8vw;
+    box-sizing: border-box;
+    font-size: 4vw;
+}
+.transparent a {
+    margin-top: 1vw;
+}
+
+.playIcon {
+    width: 6vw;
+}
+
+.arrow {
+    width: 6vw;
+}
+
+.arrowForTransparentGrey {
+    width: 6vw;
+    margin-top: 1vw;
+}
+
+.arrowForTransparentWhite {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .Button {
+        width: 100px;
+        height: 32px;
+    }
+
+    .transparent {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .Button a {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    .playIcon {
+        width: 18px;
+    }
+
+    .transparent {
+        border: 1px solid white;
+    }
+
+    .transparent a {
+        color: white;
+    }
+
+    .arrow {
+        width: 16px;
+    }
+
+    .arrowForTransparentGrey {
+        display: none;
+    }
+
+    .arrowForTransparentWhite {
+        display: block;
+        width: 16px;
+    }
+}

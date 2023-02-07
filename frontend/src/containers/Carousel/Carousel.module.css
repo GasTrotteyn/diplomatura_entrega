@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    margin: 35vw auto 0;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 26vw;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        margin-top: 35vw;
+    }
+}

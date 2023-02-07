@@ -1,0 +1,29 @@
+.BurgerIcon {
+    width: 6vw;
+    max-width: 25px;
+    height: 6vw;
+    max-height: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.BurgerIcon div {
+    width: 90%;
+    height: 0.8vw;
+    max-height: 3px;
+    background-color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .BurgerIcon {
+        display: none;
+    }
+}

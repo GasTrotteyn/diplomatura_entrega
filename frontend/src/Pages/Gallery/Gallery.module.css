@@ -1,0 +1,108 @@
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 8vw 0 0 0;
+}
+
+.button {
+    font-size: 3vw;
+    margin: 0 1vw 0;
+    cursor: pointer;
+}
+
+.active {
+    font-size: 3vw;
+    margin: 0 1vw 0;
+    color: rgb(49, 68, 179);
+    cursor: pointer;
+}
+
+.photos {
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.appear {
+    opacity: 1;
+    padding: 0;
+}
+
+.photo {
+    width: 50%;
+    max-width: 261px;
+    margin: 20px 0 0 0;
+    opacity: 1;
+    transition: opacity 1s;
+    padding: 0 0 0 0;
+}
+.longPhoto {
+    width: 100%;
+    max-width: 522px;
+    margin: 20px 0 0 0;
+    transition: opacity 1s;
+    padding: 0 0 0 0;
+}
+.bigPhoto {
+    width: 50%;
+    max-width: 261px;
+    margin: 20px 25% 0 25%;
+    transition: opacity 1s;
+    padding: 0 0 0 0;
+}
+
+.photos img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.disappear {
+    opacity: 0;
+}
+
+@media (min-width: 768px) {
+    .button {
+        font-size: 24px;
+        margin: 0 10px 0;
+    }
+    .active {
+        font-size: 24px;
+        margin: 0 10px 0;
+    }
+    .photo {
+        max-width: 32.3%;
+    }
+    .longPhoto {
+        max-width: 62%;
+    }
+    .bigPhoto {
+        max-width: 32.5%;
+        margin: 20px 33% 0 33%;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 1170px) {
+    .photos {
+        max-width: 1170px;
+    }
+
+    .photo {
+        max-width: 24%;
+    }
+    .longPhoto {
+        max-width: 46%;
+    }
+    .bigPhoto {
+        max-width: 24%;
+        margin: 20px 38% 0 38%;
+        justify-self: center;
+    }
+}

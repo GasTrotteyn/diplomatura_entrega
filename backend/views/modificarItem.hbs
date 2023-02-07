@@ -1,0 +1,44 @@
+<div>
+	<h1
+		style='color: rgb(10, 10, 51); padding: 30px; border: 2px solid rgb(10, 10, 51); border-radius: 15px'
+	>Bienvenid@ a la página para modificar los items para Patavans</h1>
+	<h3 style='font-style: italic; text-align:right'>* desde aquí podrás modificar los artículos que
+		se incluirán en la web</h3>
+
+	<form
+		action='/precios/modificarItem'
+		method='post'
+		style='color: rgb(10, 10, 51); text-decoration: none; padding: 15px; border: 2px solid rgb(10, 10, 51); border-radius: 15px; background-color:rgba(10, 10, 51, 0)'
+	>
+		<input type='hidden' name='id' value='{{item.id}}' />
+		<div style='margin:30px'>
+			<label style='display: block' for='item'>Nombre</label>
+			<input type='text' placeholder='nuevo item' name='item' value='{{item.item}}' />
+		</div>
+		<div style='margin:30px'>
+			<label style='display: block' for='price'>Precio</label>
+			<input
+				type='text'
+				placeholder='nuevo precio (incluir el signo $)'
+				name='price'
+				value='{{item.price}}'
+			/>
+		</div>
+		<div style='margin:30px'>
+			<label style='display: block' for='electric'>¿Es eléctrico? *ingrese 1 para SI y 0 para NO</label>
+			<input
+				type='number'
+				placeholder='es un componente eléctrico?'
+				name='electric'
+				value='{{item.electric}}'
+			/>
+		</div>
+		<button
+			style='color: rgb(10, 10, 51); text-decoration: none; padding: 15px; border: 2px solid rgb(10, 10, 51); border-radius: 15px; background-color:rgba(10, 10, 51, 0)'
+			type='submit'
+		>Modificar</button>
+	</form>
+	{{#if error}}
+		<h5 style='font-style: italic; text-align:right'>{{message}}</h5>
+	{{/if}}
+</div>

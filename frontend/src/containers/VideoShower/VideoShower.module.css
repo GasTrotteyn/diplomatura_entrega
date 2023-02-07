@@ -1,0 +1,10 @@
+.video {
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .video {
+        width: 60%;
+        max-width: 960px;
+    }
+}

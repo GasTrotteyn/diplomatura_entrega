@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    height: 40vw;
+}
+.background {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -2;
+}
+
+.texts {
+    position: relative;
+    left: 7vw;
+    top: 7.5vw;
+}
+.title {
+    text-align: left;
+    position: relative;
+    top: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 4vw;
+    overflow-y: hidden;
+}
+.flag {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2vw;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1170px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texts {
+        width: 1170px;
+        left: 0;
+        padding-left: 4%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .texts {
+        padding: 0;
+    }
+}

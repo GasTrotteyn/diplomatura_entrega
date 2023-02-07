@@ -1,0 +1,60 @@
+.container {
+    margin-top: 15vw;
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+}
+
+.link {
+    position: absolute;
+    background-color: white;
+    padding: 3vw 8vw;
+    top: 86vw;
+    font-size: 4vw;
+    text-decoration: none;
+    color: black;
+}
+.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.photo {
+    vertical-align: -webkit-baseline-middle;
+    width: 50%;
+}
+.longPhoto {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 10vw;
+        width: 100%;
+    }
+    .photos {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .photo {
+        width: 25%;
+    }
+    .longPhoto {
+        width: 50%;
+    }
+    .link {
+        padding: 9px 18px;
+        top: 46%;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        margin-top: 80px;
+        max-width: 1170px;
+    }
+}

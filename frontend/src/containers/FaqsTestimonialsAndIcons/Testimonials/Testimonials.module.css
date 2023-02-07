@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+    margin: 0 5vw;
+    width: 90%;
+}
+
+.flag {
+    font-size: 4vw;
+    margin: 0;
+}
+
+.title {
+    font-size: 6vw;
+    margin: 2vw 0;
+}
+
+.background {
+    width: 90vw;
+    position: relative;
+}
+
+.slides {
+    position: absolute;
+    width: 100%;
+    top: 15.5vw;
+    right: 1vw;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        overflow-y: hidden;
+    }
+
+    .flag {
+        margin: 0 0 2% 0;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .background {
+        width: 38vw;
+    }
+
+    .slides {
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        top: 0;
+        right: 0;
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 1170px) {
+    .background {
+        width: 445px;
+    }
+}
