@@ -1,0 +1,80 @@
+CREATE DATABASE  IF NOT EXISTS `ejercicio` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `ejercicio`;
+-- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
+--
+-- Host: localhost    Database: ejercicio
+-- ------------------------------------------------------
+-- Server version	8.0.28
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `precios`
+--
+
+DROP TABLE IF EXISTS `precios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `precios` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `item` varchar(250) NOT NULL,
+  `price` varchar(45) NOT NULL,
+  `electric` tinyint DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=88 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `precios`
+--
+
+LOCK TABLES `precios` WRITE;
+/*!40000 ALTER TABLE `precios` DISABLE KEYS */;
+INSERT INTO `precios` VALUES (45,'SMALL OR MED CRL WINDOW','$874',0),(46,'PROPANE WATER HEATER','$1,125',0),(47,'WEBASTO Evo 40 HEATER','$2,125',0),(48,'KNOBS/LATCHES','$135',0),(49,'UNDERBED STORAGE*','$850 - 1,150',0),(50,'1 CABINET','$855',0),(51,'1 SHELF','$295',0),(52,'HARDWOOD TABLE','$995',0),(53,'FLIP UP COUNTER EXT.','$275',0),(54,'OVEN & STOVE COMBO','$895',0),(55,'2 BURNER STOVE','$225',0),(56,'STANDARD FRIDGE','$1,105',0),(57,'UPGRADE FRIDGE','$1,280',0),(58,'PROPANE SYSTEM','$865',0),(59,'HARDWOOD COUNTERTOP','$3,350',0),(60,'TILES','$195',0),(61,'SINK & FAUCET','$495',0),(62,'WATER PUMP','$185',0),(63,'WATER TANK*','$425',0),(64,'OSMOSIS WATER FILTER','$450',0),(65,'SWIVEL BASE FOR CHAIR','$455',0),(66,'SIMPLE BED FRAME','$550',0),(67,'BED EXTENSION','$2,100',0),(68,'2 BED EXTENSIONS','$3,200',0),(69,'1 DRAWER','$340',0),(70,'MATTRESS','$875',0),(71,'SHOWER SEAT','$1,125',0),(72,'FULL SHOWER','$1,750',0),(73,'OUTDOOR SHOWER','$225',0),(74,'GREY WATER TANK','$840',0),(75,'PORTA POTTY','$150',0),(76,'COMPOSTING TOILET','$1,440',0),(77,'BENCH','$650',0),(78,'WOODEN SEAT','$275',0),(79,'AWNING (10 f)','$1,750',0),(80,'SOUND PROOFING','$300',0),(81,'PAINT','$450',0),(82,'100AH LITHIUM BATTERY','$870',1),(83,'110V OUTLET','$50',1),(84,'1000W INVERTER','$375',1),(85,'2000W INVERTER','$575',1),(86,'2000W INVERTER SHORE','$1,025',1),(87,'WEBOOST CELL BOOSTER','$1,200',1);
+/*!40000 ALTER TABLE `precios` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `usuarios` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuarios`
+--
+
+LOCK TABLES `usuarios` WRITE;
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` VALUES (1,'gaston','e10adc3949ba59abbe56e057f20f883e'),(2,'gonzalo','e10adc3949ba59abbe56e057f20f883e'),(3,'flavia','81dc9bdb52d04dc20036dbd8313ed055');
+/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-02-01 14:59:23
